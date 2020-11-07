@@ -242,6 +242,7 @@ public:
         });
 
         addAndMakeVisible (button);
+        button.setClickingTogglesState (true);
     }
 
     void update() override
