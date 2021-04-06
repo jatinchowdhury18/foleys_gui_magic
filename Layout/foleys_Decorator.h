@@ -68,7 +68,7 @@ public:
 
 private:
 
-    juce::Colour backgroundColour { juce::Colours::darkgrey };
+    juce::Colour backgroundColour { juce::Colours::transparentBlack };
     juce::Colour borderColour     { juce::Colours::silver };
 
     float margin  = 5.0f;

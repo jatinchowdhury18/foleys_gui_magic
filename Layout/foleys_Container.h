@@ -101,6 +101,8 @@ public:
      */
     GuiItem* findGuiItemWithId (const juce::String& name) override;
 
+    juce::ValueTree& getConfigNode() { return configNode; }
+
 #if FOLEYS_SHOW_GUI_EDITOR_PALLETTE
     /**
      This switches this node and all it's descendents in the edit
@@ -111,7 +113,6 @@ public:
 #endif
 
 private:
-
     void changeListenerCallback (juce::ChangeBroadcaster*) override;
     void timerCallback() override;
 
